@@ -1,0 +1,4 @@
+name: dart_notd_server
+dependencies:
+  dart_notd_common: 
+    path: '../common/'

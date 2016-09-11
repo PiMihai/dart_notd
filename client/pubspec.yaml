@@ -1,0 +1,7 @@
+name: dart_notd_client
+dependencies:
+  dart_notd_common:
+    path: '../common'
+  browser: any
+transformers:
+- $dart2js

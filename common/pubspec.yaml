@@ -1,0 +1,3 @@
+name: dart_notd_common
+dependencies:
+  exportable: any

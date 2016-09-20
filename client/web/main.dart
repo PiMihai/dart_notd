@@ -6,7 +6,7 @@ final baseUrl = '';
 main() {
   final request = new HttpRequest();
   request
-    ..open("GET", "$baseUrl/lucky")
+    ..open("GET", "$baseUrl/server/lucky")
     ..onLoadEnd.listen((_) => showGuess(request.responseText))
     ..send();
 }

@@ -18,9 +18,9 @@ void handle(HttpRequest request) {
   print("Got request at ${request.requestedUri.path}");
   request.response.headers.add("Access-Control-Allow-Origin", "*");
   if(request.method != "GET" ||
-    request.requestedUri.path != "/lucky") {
+    request.requestedUri.path != "/server/lucky") {
       request.response.headers.contentType = ContentType.HTML;
-      request.response..write("you're in the wrong place, try <a href=\"/lucky\">/lucky</a>")..close();
+      request.response..write("you're in the wrong place, try <a href=\"/server/lucky\">/lucky</a>")..close();
       return;
   }
   request.response
